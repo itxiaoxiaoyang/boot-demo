@@ -1,0 +1,20 @@
+spring:
+  mvc:
+    servlet:
+      load-on-startup: 1
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/heima65
+    username: root
+    password: 123
+server:
+  port: 80
+logging:
+  level:
+    cn.itcast: debug
+    org.springframework: info
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰
+  type-aliases-package: cn.itcast.pojo
+  #mapper-locations: mappers/*.xml
